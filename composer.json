@@ -1,0 +1,22 @@
+{
+    "name": "monochromegane/query-builder",
+    "description": "Simple query builder",
+    "keywords": ["query", "builder", "pdo"],
+    "type": "library",
+    "license": "MIT",
+    "homepage": "https://github.com/monochromegane/QueryBuilder",
+    "authors": [
+      {
+        "name": "monochromegane",
+        "email": "dev.kuro.obi@gmail.com"
+      } 
+    ],
+    "require-dev": {
+        "phpunit/phpunit": "3.7.*"
+    },
+    "autoload": {
+      "psr-0": {
+        "Monochromegane\\QueryBuilder": "src/"
+      }
+    }
+}
