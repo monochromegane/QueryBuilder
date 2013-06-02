@@ -52,7 +52,7 @@ $conditions = array(
     "column2" => "value2",
     // column3 <= ? (and bind "value3")
     "column3" => array("<=" => "value3"),
-    // column4-1 = ? OR column4-2 ? (and bind "value4-1", "value4-2")
+    // column4-1 = ? OR column4-2 = ? (and bind "value4-1", "value4-2")
     "column4-1 = ? OR column4-2 = ?" => array("value4-1", "value4-2"),
     // column5 = value5
     "column5 = value5"
@@ -91,8 +91,9 @@ $bind // array("value1", 20, 0)
 # Test
 
 ```console
-cd Monochromegane/QueryBuilder/tests
+cd vendor/monochromegane/query-builder
 composer.phar install --dev
+cd tests
 ../vendor/bin/phpunit
 ```
 
